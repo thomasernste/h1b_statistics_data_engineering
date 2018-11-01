@@ -4,11 +4,11 @@
 
 # Processing H1B Statistics from the US Office of Foreign Labor Certification Performance Data
 
-This repository contains a project that processes immigration data from the Office of Foreign Labor Certification Performance Data. The source code, written in Python 3, reads an input .txt file, processes and transforms the data in the file, and generates two output .txt files: one containing statistics for the top occupations among certified H1B applications and a second containing statistics for the top states where certified H1B applicants are working.
+This repository contains a project that processes immigration data from the Office of Foreign Labor Certification  (OFLC) Performance Data. The source code, written in Python 3, reads an input .txt file, processes and transforms the data in the file, and generates two output .txt files: one containing statistics for the top occupations among certified H1B applications and a second containing statistics for the top states where certified H1B applicants are working.
 
 # Input Dataset
 
-The original input dataset (h1b_input.txt, in the input directory) came from the Office of Foreign Labor Certification Performance Data. It includes over 50 data fields for a sample of H1B immigration applications in the United States. The pertinent columns in the data include the case status of the applicant (whether or not their application was certified), the applicant's occupational category (their Standard Occupational Classification), and the state where they are working.
+The original input dataset (h1b_input.txt, in the input directory) came from the OFLC Performance Data. It includes over 50 data fields for a sample of H1B immigration applications in the United States. The pertinent columns in the data include the case status of the applicant (whether or not their application was certified), the applicant's occupational category (their Standard Occupational Classification), and the state where they are working.
 
 # Libraries used
 
@@ -46,4 +46,6 @@ This 'states' data file is sorted, first, in reverse order by the number of cert
 
 # Code
 
-The code is documented in detail and has been tested for scalability to work on both small and large datasets of varying data structure that appear on the website for the Office of Foreign Labor Certification Performance Data, found [here](https://www.foreignlaborcert.doleta.gov/performancedata.cfm#dis).
+The code is documented in detail and has been tested for scalability to work on both small and large datasets of varying data structure that appear on the website for the OFLC, found [here](https://www.foreignlaborcert.doleta.gov/performancedata.cfm#dis).
+
+**Note: This respository was successfully tested to process a large 245 MB file from the Office of Foreign Labor Certification Performance Data website. However, Github does not allow updloading of excessively large files. My input test file in the my_h1b_test/input directory is an an abridged version of an OFLC file with a size of approximately 57 MB.
