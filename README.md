@@ -2,9 +2,9 @@
 
 ## Insight Data Engineering Coding Project:
 
-# Processing H1B Statistics from the US Office of Foreign Labor Certification Performance Data
+# Processing H1B Statistics from the US Department of Labor's Office of Foreign Labor Certification
 
-This repository contains a project that processes immigration data from the Office of Foreign Labor Certification  (OFLC) Performance Data. The source code, written in Python 3, reads an input .txt file, processes and transforms the data in the file, and generates two output .txt files: one containing statistics for the top occupations among certified H1B applications and a second containing statistics for the top states where certified H1B applicants are working.
+This repository contains a project that processes performance data from the Office of Foreign Labor Certification  (OFLC), which processes immigration applications. The source code, written in Python 3, reads an input .txt file, processes and transforms the data in the file, and generates two output .txt files: one containing statistics for the top occupations among certified H1B applications and a second containing statistics for the top states where certified H1B applicants are working.
 
 # Input Dataset
 
@@ -46,6 +46,6 @@ This 'states' data file is sorted, first, in reverse order by the number of cert
 
 # Code
 
-The code is documented in detail and has been tested for scalability to work on both small and large datasets of varying data structure that appear on the website for the OFLC, found [here](https://www.foreignlaborcert.doleta.gov/performancedata.cfm#dis).
+The code is documented in detail and has been tested for scalability to work on both small and large datasets of varying file structure that appear on the website for the OFLC, found [here](https://www.foreignlaborcert.doleta.gov/performancedata.cfm#dis).
 
-**Note: This respository was successfully tested to process a large 245 MB file from the Office of Foreign Labor Certification Performance Data website. However, Github does not allow updloading of excessively large files. My input test file in the my_h1b_test/input directory is an an abridged version of an OFLC file with a size of approximately 57 MB.
+**Note: This respository was successfully tested to process a large 245 MB file from the Office of Foreign Labor Certification Performance Data website. However, Github does not allow updloading of excessively large files. My input test file in the my_h1b_test/input directory is an an abridged version of an OFLC H1B file with a size of approximately 57 MB.
