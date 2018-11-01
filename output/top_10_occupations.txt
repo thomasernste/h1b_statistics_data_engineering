@@ -1,6 +1,428 @@
 TOP_OCCUPATIONS;NUMBER_CERTIFIED_APPLICATIONS;PERCENTAGE
-SOFTWARE DEVELOPERS, APPLICATIONS;6;60.0%
-ACCOUNTANTS AND AUDITORS;1;10.0%
-COMPUTER OCCUPATIONS, ALL OTHER;1;10.0%
-COMPUTER SYSTEMS ANALYST;1;10.0%
-DATABASE ADMINISTRATORS;1;10.0%
+Computer Systems Analysts;27369;17.0%
+Software Developers, Applications;19045;11.8%
+Computer Programmers;18568;11.5%
+Computer Occupations, All Other;10293;6.4%
+Software Developers, Systems Software;4525;2.8%
+Management Analysts;3093;1.9%
+Accountants and Auditors;2783;1.7%
+Financial Analysts;2132;1.3%
+Network and Computer Systems Administrators;1892;1.2%
+Database Administrators;1818;1.1%
+Electronics Engineers, Except Computer;1621;1.0%
+Mechanical Engineers;1471;0.9%
+Electrical Engineers;1293;0.8%
+Computer and Information Systems Managers;1228;0.8%
+Operations Research Analysts;1195;0.7%
+Medical Scientists, Except Epidemiologists;1144;0.7%
+Market Research Analysts and Marketing Specialists;1134;0.7%
+Physicians and Surgeons, All Other;1107;0.7%
+;871;0.5%
+Web Developers;863;0.5%
+Physical Therapists;862;0.5%
+Biochemists and Biophysicists;817;0.5%
+Industrial Engineers;798;0.5%
+Biological Scientists, All Other;722;0.4%
+Statisticians;685;0.4%
+Internists, General;552;0.3%
+Marketing Managers;477;0.3%
+Chemists;475;0.3%
+Pharmacists;456;0.3%
+Civil Engineers;422;0.3%
+Engineers, All Other;412;0.3%
+Sales Engineers;378;0.2%
+Financial Managers;344;0.2%
+Health Specialties Teachers, Postsecondary;334;0.2%
+Computer Hardware Engineers;329;0.2%
+Graphic Designers;328;0.2%
+Commercial and Industrial Designers;323;0.2%
+Managers, All Other;322;0.2%
+Biological Technicians;312;0.2%
+Architectural and Engineering Managers;300;0.2%
+Medical and Clinical Laboratory Technologists;294;0.2%
+Secondary School Teachers, Except Special and Care;290;0.2%
+Computer and Information Research Scientists;279;0.2%
+Materials Engineers;279;0.2%
+Elementary School Teachers, Except Special Educati;278;0.2%
+Logisticians;264;0.2%
+General and Operations Managers;257;0.2%
+Business Operations Specialists, All Other;250;0.2%
+Family and General Practitioners;247;0.2%
+Physicists;240;0.1%
+Chemical Engineers;239;0.1%
+Lawyers;226;0.1%
+Dentists, General;211;0.1%
+Sales Managers;210;0.1%
+Information Security Analysts;207;0.1%
+Architects, Except Landscape and Naval;206;0.1%
+Business Teachers, Postsecondary;201;0.1%
+Engineering Teachers, Postsecondary;190;0.1%
+Biomedical Engineers;183;0.1%
+Occupational Therapists;182;0.1%
+Materials Scientists;176;0.1%
+Human Resources Specialists;171;0.1%
+Financial Specialists, All Other;170;0.1%
+Public Relations Specialists;164;0.1%
+Medical and Health Services Managers;163;0.1%
+Actuaries;152;0.1%
+Geoscientists, Except Hydrologists and Geographers;145;0.1%
+Computer User Support Specialists;142;0.1%
+Microbiologists;140;0.1%
+Economists;137;0.1%
+Credit Analysts;130;0.1%
+Pediatricians, General;124;0.1%
+Computer Network Architects;118;0.1%
+Environmental Engineers;117;0.1%
+Industrial Production Managers;116;0.1%
+Petroleum Engineers;115;0.1%
+Mathematical Science Teachers, Postsecondary;114;0.1%
+Cost Estimators;111;0.1%
+Soil and Plant Scientists;111;0.1%
+Foreign Language and Literature Teachers, Postseco;110;0.1%
+Speech-Language Pathologists;108;0.1%
+Software Developers, Applications, Non R & D;107;0.1%
+Health Diagnosing and Treating Practitioners, All;102;0.1%
+Instructional Coordinators;102;0.1%
+Food Scientists and Technologists;98;0.1%
+Architectural and Civil Drafters;97;0.1%
+Compliance Officers;96;0.1%
+Chief Executives;95;0.1%
+Middle School Teachers, Except Special and Career/;92;0.1%
+Budget Analysts;91;0.1%
+Multimedia Artists and Animators;91;0.1%
+Fashion Designers;89;0.1%
+Social Science Research Assistants;89;0.1%
+Life Scientists, All Other;86;0.1%
+Psychiatrists;82;0.1%
+Purchasing Managers;79;0.0%
+Coaches and Scouts;77;0.0%
+Computer Science Teachers, Postsecondary;76;0.0%
+Healthcare Practitioners and Technical Workers, Al;72;0.0%
+Teachers and Instructors, All Other;72;0.0%
+Natural Sciences Managers;68;0.0%
+Registered Nurses;68;0.0%
+Advertising and Promotions Managers;66;0.0%
+Computer Network Support Specialists;66;0.0%
+Construction Managers;66;0.0%
+Training and Development Specialists;66;0.0%
+Computer Programmers Non R & D;64;0.0%
+Environmental Scientists and Specialists, Includin;64;0.0%
+Securities, Commodities, and Financial Services Sa;64;0.0%
+Technical Writers;64;0.0%
+Electrical Engineers, R&D;63;0.0%
+Interior Designers;63;0.0%
+Biological Science Teachers, Postsecondary;62;0.0%
+Economics Teachers, Postsecondary;62;0.0%
+Editors;61;0.0%
+Transportation, Storage, and Distribution Managers;60;0.0%
+Computer Systems Analysts, Non R&D;59;0.0%
+Art Directors;58;0.0%
+Education Administrators, Postsecondary;58;0.0%
+Art, Drama, and Music Teachers, Postsecondary;56;0.0%
+Electronics Engineers, Except Computer, Non R&D;54;0.0%
+Atmospheric and Space Scientists;53;0.0%
+Mathematicians;53;0.0%
+Veterinarians;51;0.0%
+Preschool Teachers, Except Special Education;50;0.0%
+Software Developers, Applications, R&D;50;0.0%
+Physical Scientists, All Other;49;0.0%
+Postsecondary Teachers, All Other;48;0.0%
+Marine Engineers and Naval Architects;47;0.0%
+Social and Community Service Managers;47;0.0%
+Aerospace Engineers;45;0.0%
+Mechanical Engineers, R&D;45;0.0%
+Public Relations and Fundraising Managers;45;0.0%
+Educational, Guidance, School, and Vocational Coun;44;0.0%
+Surgeons;44;0.0%
+Training and Development Managers;44;0.0%
+Human Resources Managers;43;0.0%
+Epidemiologists;41;0.0%
+Health and Safety Engineers, Except Mining Safety;41;0.0%
+Personal Financial Advisors;40;0.0%
+Dentists, All Other Specialists;37;0.0%
+Paralegals and Legal Assistants;37;0.0%
+Chemistry Teachers, Postsecondary;36;0.0%
+Reporters and Correspondents;36;0.0%
+Sales Representatives, Wholesale and Manufacturing;35;0.0%
+Special Education Teachers, Secondary School;35;0.0%
+Models;34;0.0%
+Education Teachers, Postsecondary;33;0.0%
+Astronomers;32;0.0%
+Health Educators;32;0.0%
+Meeting, Convention, and Event Planners;32;0.0%
+English Language and Literature Teachers, Postseco;31;0.0%
+Landscape Architects;31;0.0%
+Mining and Geological Engineers, Including Mining;31;0.0%
+Physics Teachers, Postsecondary;31;0.0%
+Special Education Teachers, Kindergarten and Eleme;31;0.0%
+Clinical, Counseling, and School Psychologists;30;0.0%
+Food Service Managers;30;0.0%
+Judicial Law Clerks;29;0.0%
+Kindergarten Teachers, Except Special Education;29;0.0%
+Mental Health Counselors;29;0.0%
+Computer Support Specialists;28;0.0%
+Purchasing Agents, Except Wholesale, Retail, and F;28;0.0%
+Zoologists and Wildlife Biologists;28;0.0%
+Civil Engineers, R&D;27;0.0%
+Obstetricians and Gynecologists;27;0.0%
+Psychology Teachers, Postsecondary;27;0.0%
+Computer Systems Analysts, R&D;26;0.0%
+Rehabilitation Counselors;26;0.0%
+Communications Teachers, Postsecondary;25;0.0%
+Compensation, Benefits, and Job Analysis Specialis;25;0.0%
+Electrical and Electronics Engineering Technicians;25;0.0%
+Political Science Teachers, Postsecondary;25;0.0%
+Urban and Regional Planners;25;0.0%
+Accountants;24;0.0%
+Administrative Services Managers;24;0.0%
+Chemical Technicians;24;0.0%
+Survey Researchers;24;0.0%
+Farmers, Ranchers, and Other Agricultural Managers;23;0.0%
+Media and Communication Workers, All Other;23;0.0%
+Curators;22;0.0%
+Designers, All Other;22;0.0%
+Optometrists;22;0.0%
+Financial Examiners;21;0.0%
+Interpreters and Translators;21;0.0%
+Producers and Directors;21;0.0%
+Engineering Technicians, Except Drafters, All Othe;20;0.0%
+Geological and Petroleum Technicians;20;0.0%
+History Teachers, Postsecondary;20;0.0%
+Lodging Managers;20;0.0%
+Agricultural Engineers;19;0.0%
+Agricultural Sciences Teachers, Postsecondary;19;0.0%
+Anesthesiologists;19;0.0%
+Architecture Teachers, Postsecondary;19;0.0%
+Credit Counselors;19;0.0%
+Dietitians and Nutritionists;19;0.0%
+Geographers;19;0.0%
+Psychologists, All Other;19;0.0%
+Recreation and Fitness Studies Teachers, Postsecon;19;0.0%
+Self-Enrichment Education Teachers;19;0.0%
+Life, Physical, and Social Science Technicians, Al;18;0.0%
+Social Scientists and Related Workers, All Other;18;0.0%
+Special Education Teachers, Middle School;18;0.0%
+Writers and Authors;18;0.0%
+Agricultural and Food Science Technicians;17;0.0%
+Animal Breeders;17;0.0%
+Atmospheric, Earth, Marine, and Space Sciences Tea;17;0.0%
+Cartographers and Photogrammetrists;17;0.0%
+Computer Programmers R & D;17;0.0%
+Librarians;17;0.0%
+Mechanical Engineering Technicians;17;0.0%
+Philosophy and Religion Teachers, Postsecondary;17;0.0%
+Software Quality Assurance Engineers and Testers;17;0.0%
+Wholesale and Retail Buyers, Except Farm Products;17;0.0%
+Athletic Trainers;16;0.0%
+Clergy;16;0.0%
+Insurance Underwriters;16;0.0%
+Area, Ethnic, and Cultural Studies Teachers, Posts;15;0.0%
+Child, Family, and School Social Workers;15;0.0%
+Directors, Religious Activities and Education;15;0.0%
+Legal Support Workers, All Other;15;0.0%
+Nurse Practitioners;15;0.0%
+Software Developers, Systems Software, R&D;15;0.0%
+Chefs and Head Cooks;14;0.0%
+Education Administrators, Elementary and Secondary;14;0.0%
+Chiropractors;13;0.0%
+Computer Software Engineers, Applications;13;0.0%
+Education Administrators, All Other;13;0.0%
+Healthcare Social Workers;13;0.0%
+Nursing Instructors and Teachers, Postsecondary;13;0.0%
+Occupational Health and Safety Specialists;13;0.0%
+Physician Assistants;13;0.0%
+Software Developers, Systems Software, Non R&D;13;0.0%
+Special Education Teachers, Preschool, Kindergarte;13;0.0%
+Animal Scientists;12;0.0%
+Mathematical Science Occupations, All Other;12;0.0%
+Political Scientists;12;0.0%
+Bookkeeping, Accounting, and Auditing Clerks;11;0.0%
+Property, Real Estate, and Community Association M;11;0.0%
+Sociology Teachers, Postsecondary;11;0.0%
+Electronics Engineers, Except Computer, R&D;10;0.0%
+Mechanical Drafters;10;0.0%
+Nuclear Engineers;10;0.0%
+Sociologists;10;0.0%
+Special Education Teachers, Preschool;10;0.0%
+Counselors, All Other;9;0.0%
+Environmental Science and Protection Technicians,;9;0.0%
+Geography Teachers, Postsecondary;9;0.0%
+Health Technologists and Technicians, All Other;9;0.0%
+Mental Health and Substance Abuse Social Workers;9;0.0%
+Social Sciences Teachers, Postsecondary, All Other;9;0.0%
+Computer Systems Engineers/Architects;8;0.0%
+Education Administrators, Preschool and Childcare;8;0.0%
+Environmental Science Teachers, Postsecondary;8;0.0%
+First-Line Supervisors of Office and Administrativ;8;0.0%
+Hydrologists;8;0.0%
+Medical and Clinical Laboratory Technicians;8;0.0%
+Museum Technicians and Conservators;8;0.0%
+Statistical Assistants;8;0.0%
+Audiologists;7;0.0%
+Community and Social Service Specialists, All Othe;7;0.0%
+Film and Video Editors;7;0.0%
+Law Teachers, Postsecondary;7;0.0%
+Loan Officers;7;0.0%
+Market Research Analysts;7;0.0%
+Podiatrists;7;0.0%
+Recreation Workers;7;0.0%
+Sales Representatives, Services, All Other;7;0.0%
+Telecommunications Equipment Installers and Repair;7;0.0%
+Adult Basic and Secondary Education and Literacy T;6;0.0%
+Engineering Managers;6;0.0%
+Executive Secretaries and Executive Administrative;6;0.0%
+Genetic Counselors;6;0.0%
+Industrial-Organizational Psychologists;6;0.0%
+Medical Records and Health Information Technicians;6;0.0%
+Music Directors and Composers;6;0.0%
+Office and Administrative Support Workers, All Oth;6;0.0%
+Orthodontists;6;0.0%
+Orthotists and Prosthetists;6;0.0%
+Recreational Therapists;6;0.0%
+Secondary School Teachers, Except Special and Voca;6;0.0%
+Set and Exhibit Designers;6;0.0%
+Therapists, All Other;6;0.0%
+Aerospace Engineering and Operations Technicians;5;0.0%
+Agents and Business Managers of Artists, Performer;5;0.0%
+Civil Engineering Technicians;5;0.0%
+Electrical Engineers, Non R&D;5;0.0%
+Electrical and Electronics Drafters;5;0.0%
+Emergency Management Directors;5;0.0%
+Farm and Home Management Advisors;5;0.0%
+First-Line Supervisors of Non-Retail Sales Workers;5;0.0%
+Forestry and Conservation Science Teachers, Postse;5;0.0%
+Healthcare Support Workers, All Other;5;0.0%
+Industrial Engineering Technicians;5;0.0%
+Marriage and Family Therapists;5;0.0%
+Mathematical Technicians;5;0.0%
+Residential Advisors;5;0.0%
+Social Work Teachers, Postsecondary;5;0.0%
+Social Workers, All Other;5;0.0%
+Special Education Teachers, All Other;5;0.0%
+Anthropologists and Archeologists;4;0.0%
+Compensation and Benefits Managers;4;0.0%
+First-Line Supervisors of Production and Operating;4;0.0%
+Foresters;4;0.0%
+Graduate Teaching Assistants;4;0.0%
+Human Resources Assistants, Except Payroll and Tim;4;0.0%
+Library Science Teachers, Postsecondary;4;0.0%
+Mechanical Engineers, Non R&D;4;0.0%
+Physical Therapist Assistants;4;0.0%
+Tax Preparers;4;0.0%
+Transportation Inspectors;4;0.0%
+Advertising Sales Agents;3;0.0%
+Anthropology and Archeology Teachers, Postsecondar;3;0.0%
+Audio-Visual and Multimedia Collections Specialist;3;0.0%
+Community Health Workers;3;0.0%
+Computer Network Architects, Non R&D;3;0.0%
+Criminal Justice and Law Enforcement Teachers, Pos;3;0.0%
+Customer Service Representatives;3;0.0%
+Electrical and Electronic Engineering Technicians;3;0.0%
+Fundraisers;3;0.0%
+Insurance Sales Agents;3;0.0%
+Middle School Teachers, Except Special and Vocatio;3;0.0%
+Musicians and Singers;3;0.0%
+Prosthodontists;3;0.0%
+Secretaries and Administrative Assistants, Except;3;0.0%
+Substance Abuse and Behavioral Disorder Counselors;3;0.0%
+Travel Agents;3;0.0%
+Architectural Drafters;2;0.0%
+Auditors;2;0.0%
+Choreographers;2;0.0%
+Civil Engineers, Non R&D;2;0.0%
+Commercial Pilots;2;0.0%
+Computer Hardware Engineers, R&D;2;0.0%
+Conservation Scientists;2;0.0%
+Dental Assistants;2;0.0%
+Drafters, All Other;2;0.0%
+Education, Training, and Library Workers, All Othe;2;0.0%
+Electrical and Electronics Repairers, Powerhouse,;2;0.0%
+Employment, Recruitment, and Placement Specialists;2;0.0%
+Environmental Engineering Technicians;2;0.0%
+Exercise Physiologists;2;0.0%
+Fine Artists, Including Painters, Sculptors, and I;2;0.0%
+First-Line Supervisors of Farming, Fishing, and Fo;2;0.0%
+Fitness Trainers and Aerobics Instructors;2;0.0%
+Home Economics Teachers, Postsecondary;2;0.0%
+Home Health Aides;2;0.0%
+Inspectors, Testers, Sorters, Samplers, and Weighe;2;0.0%
+Insurance Claims and Policy Processing Clerks;2;0.0%
+Jewelers and Precious Stone and Metal Workers;2;0.0%
+Medical Assistants;2;0.0%
+Multi-Media Artists and Animators;2;0.0%
+Nurse Anesthetists;2;0.0%
+Office Clerks, General;2;0.0%
+Parts Salespersons;2;0.0%
+Pharmacy Technicians;2;0.0%
+Photographers;2;0.0%
+Production Workers, All Other;2;0.0%
+Production, Planning, and Expediting Clerks;2;0.0%
+Substitute teachers (OES only);2;0.0%
+Surveyors;2;0.0%
+Veterinary Technologists and Technicians;2;0.0%
+Vocational Education Teachers, Postsecondary;2;0.0%
+Adhesive Bonding Machine Operators and Tenders;1;0.0%
+Agricultural Inspectors;1;0.0%
+Aircraft Mechanics and Service Technicians;1;0.0%
+Airline Pilots, Copilots, and Flight Engineers;1;0.0%
+Arbitrators, Mediators, and Conciliators;1;0.0%
+Archivists;1;0.0%
+Assemblers and Fabricators, All Other;1;0.0%
+Audio and Video Equipment Technicians;1;0.0%
+Broadcast Technicians;1;0.0%
+Brokerage Clerks;1;0.0%
+Buyers and Purchasing Agents, Farm Products;1;0.0%
+Captains, Mates, and Pilots of Water Vessels;1;0.0%
+Cardiovascular Technologists and Technicians;1;0.0%
+Career/Technical Education Teachers, Middle School;1;0.0%
+Career/Technical Education Teachers, Secondary Sch;1;0.0%
+Cargo and Freight Agents;1;0.0%
+Childcare Workers;1;0.0%
+Compliance Officers, Except Agriculture, Construct;1;0.0%
+Computer Hardware Engineers, Non R&D;1;0.0%
+Computer Network Architects, R&D;1;0.0%
+Computer Software Engineers, Systems Software;1;0.0%
+Construction and Building Inspectors;1;0.0%
+Construction and Related Workers, All Other;1;0.0%
+Copy Writers;1;0.0%
+Dental Laboratory Technicians;1;0.0%
+Detectives and Criminal Investigators;1;0.0%
+File Clerks;1;0.0%
+Financial Managers, Branch or Department;1;0.0%
+First-Line Supervisors of Construction Trades and;1;0.0%
+First-Line Supervisors of Helpers, Laborers, and M;1;0.0%
+First-Line Supervisors of Housekeeping and Janitor;1;0.0%
+First-Line Supervisors of Landscaping, Lawn Servic;1;0.0%
+First-Line Supervisors of Mechanics, Installers, a;1;0.0%
+First-Line Supervisors of Personal Service Workers;1;0.0%
+First-Line Supervisors of Retail Sales Workers;1;0.0%
+Hairdressers, Hairstylists, and Cosmetologists;1;0.0%
+Heavy and Tractor-Trailer Truck Drivers;1;0.0%
+Historians;1;0.0%
+Information Security Analysts, Web Developers, and;1;0.0%
+Information and Record Clerks, All Other;1;0.0%
+Labor Relations Specialists;1;0.0%
+Legislators;1;0.0%
+Machinists;1;0.0%
+Makeup Artists, Theatrical and Performance;1;0.0%
+Massage Therapists;1;0.0%
+Media and Communication Equipment Workers, All Oth;1;0.0%
+Meeting and Convention Planners;1;0.0%
+Merchandise Displayers and Window Trimmers;1;0.0%
+New Accounts Clerks;1;0.0%
+Nuclear Technicians;1;0.0%
+Plasterers and Stucco Masons;1;0.0%
+Precision Instrument and Equipment Repairers, All;1;0.0%
+Radiation Therapists;1;0.0%
+Radiologic Technologists;1;0.0%
+Respiratory Therapists;1;0.0%
+Sales Agents, Securities and Commodities;1;0.0%
+Sales and Related Workers, All Other;1;0.0%
+Sound Engineering Technicians;1;0.0%
+Teacher Assistants;1;0.0%
+Title Examiners, Abstractors, and Searchers;1;0.0%
+Transportation Managers;1;0.0%
+Transportation Workers, All Other;1;0.0%
+Treasurers, Controllers, and Chief Financial Offic;1;0.0%
+Veterinary Assistants and Laboratory Animal Careta;1;0.0%
+Web Administrators;1;0.0%

@@ -7,6 +7,9 @@ import csv
 # sys module enables reading arguments used in Python function
 import sys
 
+# re module enables the use of regular expressions
+import re
+
 
 def process_h1b_statistics(input_data_txt, output_occupations_txt,
                            output_states_txt):
@@ -16,40 +19,66 @@ def process_h1b_statistics(input_data_txt, output_occupations_txt,
     # The counter value counts all rows and represents the denominator in
     # calculating the PERCENTAGE column
     counter = 0
-    with open(input_data_txt, "r") as file:
+
+    # Although the input files have differing file structures, the columns
+    # of interest (occupational category and state of the applicant's work
+    # site) across the files have similar names. These regular expression
+    # patterns are used in my code below to identify the index location of
+    # my columns of interest regardless of the index location of the given
+    # columns.
+    occup_pattern = "(.*)SOC_NAME"
+    state_pattern = "(.*)WORK(.*)_STATE"
+
+
+    # These lists are used to store the index locations of the case
+    # status location column plus the occupational category and worksite
+    # state of the applicant.
+    occup_header_indices = []
+    state_header_indices = []
+
+
+    # This instantiates a csv reader
+    reader = csv.reader(open(input_data_txt), delimiter=';')
+
+
+    # Gets and stores only the first row, allowing for the identification of
+    # the column index for my columns of interest within any given file
+    # structure.
+    input_header = next(reader)
+    for i, top_line in enumerate(input_header):
+        if 'STATUS' in top_line or re.match(occup_pattern, top_line):
+            occup_header_indices.append(i)
+        if 'STATUS' in top_line or re.match(state_pattern, top_line):
+            state_header_indices.append(i)
+
+    # Because many of the input files contained a semicolon within the
+    # column strings, these semicolons within columns can create problems for
+    # sorting a semicolon-separated file. This block of code removes all of
+    # the semicolons from within any column string in any file.
+    interim_string = ' '
+    with open(input_data_txt, 'r', newline='') as infile, \
+            open(interim_string, 'w', newline='') as outfile:
+        writer = csv.writer(outfile, delimiter=';')
+        for row in csv.reader(infile, delimiter=';'):
+            for e, col in enumerate(row):
+                if ';' in col:
+                    row[e] = row[e].replace(';', '')
+            writer.writerow(row)
+
+
+    with open(interim_string, "r") as file:
         # This enables skipping the header line.
         skipped = islice(file, 1, None)
+
         for i, line in enumerate(skipped, 2):
             counter += 1
-            # A ValueError occurs when splitting and writing each line and
-            # from the input file to variables for each of the columns that
-            # appear in the input file
 
-            try:
-                index, case_number, case_status, case_submitted, \
-                decision_date, visa_class, employment_start_date, \
-                employment_end_date, employer_name, employer_business_dba, \
-                employer_address, employer_city, employer_state, \
-                employer_postal_code, employer_country, employer_province, \
-                employer_phone, employer_phone_ext, \
-                agent_representing_employer, agent_attorney_name, \
-                agent_attorney_city, agent_attorney_state, job_title, \
-                soc_code, soc_name, naics_code, total_workers, \
-                new_employment, continued_employment, \
-                change_previous_employment, new_concurrent_emp, \
-                change_employer, amended_petition, full_time_position, \
-                prevailing_wage, pw_unit_of_pay, pw_wage_level, pw_source, \
-                pw_source_year, pw_source_other, wage_rate_of_pay_from, \
-                wage_rate_of_pay_to, wage_unit_of_pay, h1b_dependent, \
-                willful_violator, support_h1b, labor_con_agree, \
-                public_disclosure_location, worksite_city, worksite_county, \
-                worksite_state, worksite_postal_code, original_cert_date = \
-                    line.split(";")
+            # This code writes the string data to list that will be used to
+            # write the data to dictionaries below.
 
-            except ValueError:
-                pass
+            my_data = line.split(";")
 
-            # These if/else blocks read the data into two dictionaries,
+            # These if/else blocks below read the data into two dictionaries,
             # one for the Top 10 occupations data and one from the Top 10
             # states data. The Standard Occupational Code (SOC) name (
             # soc_name) is the key in the occupations dictionary and the
@@ -64,18 +93,24 @@ def process_h1b_statistics(input_data_txt, output_occupations_txt,
             # the data to standardize all of the soc_name values for my
             # output data.
 
-            soc_name = soc_name.strip('/"')
+            case_status = my_data[occup_header_indices[0]]
+            soc_name = my_data[occup_header_indices[1]].strip('"')
+
+
+            worksite_state = my_data[state_header_indices[1]]
 
             # This if clause specifies that a case should only be counted if
             #  the case has a 'CERTIFIED' status.
             if case_status == 'CERTIFIED':
 
                 # Note, as with all Python dictionaries, if the key does not
-                #  yet appear in the dictionary, the line below creates that
-                #  new key with a starting value of 1.
+                # yet appear in the dictionary, the line below creates that
+                # new key with a starting value of 1.
+
                 # The 'else' part of this if/else block for the occupations
                 # dictionary adds to the existing value for each key that
                 # already appears in the dictionary.
+
                 if soc_name not in occup_dict:
                     occup_dict[soc_name] = 1
 
@@ -140,7 +175,6 @@ def process_h1b_statistics(input_data_txt, output_occupations_txt,
         wr = csv.writer(myfile_states, delimiter=';')
         for i in final_array_states:
             wr.writerow(i)
-
 
 # This block allows execution of the process_h1b_statistics function from the
 # run.sh shell script, with the appropriate input and output files included

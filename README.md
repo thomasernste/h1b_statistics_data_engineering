@@ -20,6 +20,8 @@ The Python libraries used in the source code include:
 
 - **sys** - (enables reading the function arguments)
 
+- **re** - (enables use of regular expressions)
+
 
 # Output Datasets
 
@@ -40,12 +42,8 @@ Each line of the second 'states' output file contains the following fields in a 
 - **PERCENTAGE**: the percentage of applicants working in the specified US state among all applications in the original sample.
 
 
-
 This 'states' data file is sorted, first, in reverse order by the number of certified applicants working in each state, and secondly alphabetically by state name if the state names have the same number of certified applications.
 
 # Code
 
-The code is documented in detail and has been tested for scalability to work on small and large datasets and to handle either integers or floats for the drug price values.
-# h1b_insight_project
-# h1b_insight_project
-# h1b_statistics_insight_project
+The code is documented in detail and has been tested for scalability to work on both small and large datasets of varying data structure that appear on the website for the Office of Foreign Labor Certification Performance Data, found [here](https://www.foreignlaborcert.doleta.gov/performancedata.cfm#dis).
