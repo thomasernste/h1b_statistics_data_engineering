@@ -6,11 +6,13 @@
 
 # Introduction/Approach
 
-This repository contains a project that processes performance data from the Office of Foreign Labor Certification  (OFLC), which processes immigration applications. The source code, written in Python 3, reads an input .txt file, processes and transforms the data in the file, and generates two output .txt files: one containing statistics for the top occupations among certified H1B applications and a second containing statistics for the top states where certified H1B applicants are working.
+This repository contains a project that parses .csv files that contain data from the Office of Foreign Labor Certification (OFLC), which is the US government's divison for considering immigration applications. The source code, written in Python 3, is designed to read the input .csv files, parse the data in the files, and generate two output .txt files with data. One of these output files contains data for the top occupations among certified H1B applications and a second containing statistics for the top states where certified H1B applicants are working.
 
 # The Problem
 
-The OFLC provides large files each year containing data about the status of various types of immigration applications in the United States. Because each line contains dozens of attributes about the applicant and potentially hundreds of thousands of applications are processed in a given quarter or year, the data files are both very large and also not useful by themselves for analysis. Further, although many of the columns in the data have limited value, a small number of the columns are very useful for analyzing and better understanding statistics regarding immigration in the United States. These files are much too large to be efficiently processed using standard software such as Microsoft Excel. These issues mean that data engineering and data science can be useful for processing these files, selecting relevant features for analysis, and presenting the data in ways that are illuminating of immigration trends.
+The OFLC provides large files each year containing data indicating the status of various types of immigration applications in the United States. While this data contains potentially important insights into the immgration system in the United States, there are challenges in enabling useful analysis of the data.
+
+One challenge is that because each line of each file contains dozens of attributes about the applicant and potentially hundreds of thousands of applications are processed in a given quarter or year, the data files are very large. Further, although many of the columns in the data have limited value, a small number of the columns are very useful for analyzing and better understanding statistics regarding immigration in the United States. Indeed, these files are much too large to be efficiently processed using standard software such as Microsoft Excel.Therefore, parsing this data requires being sure to minimize the space and time complexity of the code. Therefore, parsing this data requires the data engineering process to focus on minimizing the space and time complexity of the code.
 
 # Input Dataset
 

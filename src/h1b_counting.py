@@ -10,6 +10,10 @@ import sys
 # re module enables the use of regular expressions
 import re
 
+# This code processes files containing data from the Office of Foreign
+# Labor Certification (OFLC), which considers and rules on immigration
+# applications for people seeking various forms of US citizenship.
+
 
 def process_h1b_statistics(input_data_txt, output_occupations_txt,
                            output_states_txt):
@@ -40,6 +44,7 @@ def process_h1b_statistics(input_data_txt, output_occupations_txt,
     # This instantiates a csv reader
     reader = csv.reader(open(input_data_txt), delimiter=';')
 
+    print(type(reader))
 
     # Gets and stores only the first row, allowing for the identification of
     # the column index for my columns of interest within any given file
@@ -65,7 +70,6 @@ def process_h1b_statistics(input_data_txt, output_occupations_txt,
                     row[e] = row[e].replace(';', '')
             writer.writerow(row)
 
-
     with open(interim_string, "r") as file:
         # This enables skipping the header line.
         skipped = islice(file, 1, None)
@@ -73,10 +77,12 @@ def process_h1b_statistics(input_data_txt, output_occupations_txt,
         for i, line in enumerate(skipped, 2):
             counter += 1
 
-            # This code writes the string data to list that will be used to
-            # write the data to dictionaries below.
+            # This code saves the string data to my_list during each
+            # iteration. During each iteration, the data in each list is
+            # written to the dictionaries below.
 
             my_data = line.split(";")
+
 
             # These if/else blocks below read the data into two dictionaries,
             # one for the Top 10 occupations data and one from the Top 10
@@ -100,7 +106,7 @@ def process_h1b_statistics(input_data_txt, output_occupations_txt,
             worksite_state = my_data[state_header_indices[1]]
 
             # This if clause specifies that a case should only be counted if
-            #  the case has a 'CERTIFIED' status.
+            # the case has a 'CERTIFIED' status.
             if case_status == 'CERTIFIED':
 
                 # Note, as with all Python dictionaries, if the key does not
@@ -175,6 +181,7 @@ def process_h1b_statistics(input_data_txt, output_occupations_txt,
         wr = csv.writer(myfile_states, delimiter=';')
         for i in final_array_states:
             wr.writerow(i)
+
 
 # This block allows execution of the process_h1b_statistics function from the
 # run.sh shell script, with the appropriate input and output files included
