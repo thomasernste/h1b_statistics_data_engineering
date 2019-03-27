@@ -44,8 +44,6 @@ def process_h1b_statistics(input_data_txt, output_occupations_txt,
     # This instantiates a csv reader
     reader = csv.reader(open(input_data_txt), delimiter=';')
 
-    print(type(reader))
-
     # Gets and stores only the first row, allowing for the identification of
     # the column index for my columns of interest within any given file
     # structure.
