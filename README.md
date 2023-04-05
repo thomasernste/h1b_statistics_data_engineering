@@ -1,12 +1,12 @@
 #### Thomas Ernste - 10/31/2018
 
-## Insight Data Engineering Coding Project:
+## Coding Project:
 
 # Processing H1B Statistics from the US Department of Labor's Office of Foreign Labor Certification
 
 # Introduction/Approach
 
-This repository contains a project that parses .csv files that contain data from the Office of Foreign Labor Certification (OFLC), which is the US government's divison for considering immigration applications. The source code, written in Python 3, is designed to read the input .csv files, parse the data in the files, and generate two output .txt files with data. One of these output files contains data for the top occupations among certified H1B applications and a second containing statistics for the top states where certified H1B applicants are working.
+This repository contains a project that parses .csv files that contain data from the Office of Foreign Labor Certification (OFLC), which is the US government's divison for considering immigration applications. The source code, written in Python 3, is designed to read the input .csv files, parse the data in the files, and generate two output .txt files with data. One of these output files contains data for the top occupations among certified H1B applications and a second contains statistics for the top states where certified H1B applicants are working.
 
 # The Problem
 
@@ -16,7 +16,7 @@ One challenge is that because each line of each file contains dozens of attribut
 
 # Input Dataset
 
-The original input dataset (h1b_input.txt, in the input directory) came from the OFLC Performance Data. It includes over 50 data fields for a sample of H1B immigration applications in the United States. The pertinent columns in the data include the case status of the applicant (whether or not their application was certified), the applicant's occupational category (their Standard Occupational Classification), and the state where they are working.
+The original input dataset (h1b_input.txt, in the input directory) came from the OFLC Performance Data. It includes over 50 data fields for a sample of H1B immigration applications in the United States. The pertinent columns in the data for the purposes of this project include the case status of the applicant (whether or not their application was certified), the applicant's occupational category (their Standard Occupational Classification), and the state where they are working.
 
 # Libraries used
 
@@ -33,19 +33,19 @@ The Python libraries used in the source code include:
 
 # Output Datasets
 
-Each line of the first 'occupations' output file contains the following fields in a in a semicolon separated format with semicolons the delimiters:
+Each line of the first 'occupations' output file contains the following fields in a semicolon separated format with semicolons as the delimiters:
 
 - **TOP_OCCUPATIONS**: the 'Standard Occupational Classification (SOC) code' of the application.
 - **NUMBER_CERTIFIED_APPLICATIONS**: the number of certified applicants with the SOC code from the first column.
 - **PERCENTAGE**: the percentage of applicants with the specified SOC code among all applications in the original sample.
 
 
-This 'occupational' data file is sorted, first, in reverse order by the number of certified applications for each occupational category, and secondly alphabetically by occupational category if the occupational categories have the same number of certified applications.
+This 'occupational' data file is sorted, first, in reverse order by the number of certified applications for each occupational category (second column), and secondly alphabetically by occupational category (first column) if the occupational categories have the same number of certified applications.
 
 
-Each line of the second 'states' output file contains the following fields in a semicolon separated format with semicolons the delimiters:
+Each line of the second output file called 'states' contains the following fields in a semicolon separated format with semicolons the delimiters:
 
-- **TOP_STATES**: the US state where the applicant is working.
+- **TOP_STATES**: the US state in which the applicant is working.
 - **NUMBER_CERTIFIED_APPLICATIONS**: the number of certified applicants working in the state from the first column.
 - **PERCENTAGE**: the percentage of applicants working in the specified US state among all applications in the original sample.
 
